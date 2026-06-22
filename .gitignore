@@ -1,0 +1,35 @@
+# ---- NODE / BACKEND & FRONTEND ----
+# Ignora las carpetas de dependencias (son pesadísimas y se vuelven a instalar con npm install)
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# ---- VARIABLES DE ENTORNO (SEGURIDAD) ----
+# ¡Crucial! Evita que tu contraseña de MongoDB Atlas se suba a GitHub
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+server/.env
+client/.env
+
+# ---- VITE / COMPILACIÓN ----
+# Ignora las carpetas que se generan cuando compilas el proyecto para producción
+dist/
+client/dist/
+.cache/
+
+# ---- LOGS Y ERRORES ----
+# Archivos de registro de errores de npm
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ---- SISTEMA OPERATIVO ----
+# Archivos basura que crean Windows o Mac automáticamente
+.DS_Store
+Thumbs.db
+
+MERN_1
